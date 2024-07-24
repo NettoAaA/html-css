@@ -40,13 +40,23 @@ main {
   border-radius: 10px;
 }
 
+ul {
+  list-style-position: inside;
+}
+
+li {
+  position: relative;
+  margin: 10px;
+  line-height: 25px;
+  left: -10px;
+}
+
 div#img {
   height: 160px;
   width: 100%;
   background-image: url(../assets/images/image-omelette.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 section#recipe {
@@ -74,4 +84,13 @@ section#recipe h1 {
 
 section#recipe p {
   line-height: 22px;
-} 
+}
+
+h3 {
+  color: var(--cor-subtitulo1);
+}
+
+section#preparation {
+  padding: 10px;
+  padding-left: 25px;
+}
