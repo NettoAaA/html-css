@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media-query.css">
   <title>Frontend Mentor | Recipe page</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
           <li><strong>Cooking</strong>: 5 minutes</li>
         </ul>
       </section>
-      <section>
+      <section id="ingredients" class="recipe">
         <h2>Ingredients</h2>
         <ul>
           <li>2-3 large eggs</li>
@@ -36,9 +37,9 @@
           <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
         </ul>
       </section>
-      <section>
+      <section id="instructions" class="recipe">
         <h2>Instructions</h2>
-        <ul>
+        <ol>
           <li><strong>Beat the eggs</strong>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
           You can add a tablespoon of water or milk for a fluffier texture.</li>
           <li><strong>Heat the pan</strong>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
@@ -55,26 +56,26 @@
             fillings. Let it cook for another minute, then slide it onto a plate.
           </li>
           <li><strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.</li>
-        </ul>
+        </ol>
       </section>
-      <section>
+      <section id="nutrition" class="recipe">
         <h2>Nutrition</h2>
         <p>The table below shows nutritional values per serving without the additional fillings.</p>
-        <table>
+        <table border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td>Calories</td>
+            <th>Calories</th>
             <td>277kcal</td>
           </tr>
           <tr>
-            <td>Carbs</td>
+            <th>Carbs</th>
             <td>0g</td>
           </tr>
           <tr>
-            <td>Protein</td>
+            <th>Protein</th>
             <td>20g</td>
           </tr>
           <tr>
-            <td>Fat</td>
+            <th>Fat</th>
             <td>22g</td>
           </tr>
         </table>
