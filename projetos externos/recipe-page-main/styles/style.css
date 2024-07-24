@@ -8,6 +8,12 @@
   src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
+@media screen and (min-width: 576px) {
+  img {
+    border-radius: 10px;
+  }
+}
+
 :root {
   --fonte-titulo: 'young-serif', Arial, sans-serif;
   --fonte-texto: 'outfit', sans-serif;
@@ -32,8 +38,8 @@
 }
 
 body {
-  background-color: hsl(15, 100%, 92%);
-
+  background-color: hsl(15, 100%, 92%) !important;
+  
   display: flex;
   justify-content: center;
 
@@ -54,7 +60,7 @@ ul {
 
 li {
   position: relative;
-  margin: 10px;
+  margin: 10px 0px;
   line-height: 25px;
   left: -10px;
 }
@@ -101,10 +107,6 @@ section#recipe p {
   line-height: 22px;
 }
 
-section#ingredients > ul {
-  margin-left: 10px;
-}
-
 section#preparation {
   background-color: hsl(330, 100%, 98%);
   padding: 10px;
@@ -116,19 +118,17 @@ section#preparation h3 {
 }
 
 section#instructions {
-  margin-top: 20px;
   border-top: 1px solid hsl(30, 18%, 87%);
   border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
 section#instructions ol {
   counter-reset: li;
-  margin-bottom: 25px;
 }
 
 section#instructions ol > li {
   position: relative;
-  margin: 0 0 8px 2em;
+  margin: 0 0 8px 10px;
   padding: 6px 15px;
   list-style: none;
 }
@@ -145,14 +145,6 @@ section#instructions ol > li::before {
 
   color: var(--cor-subtitulo2);
   font-weight: 600;
-}
-
-section#nutrition th,td {
-  width: 130px;
-  height: 35px;
-  padding: 5px;
-  border-bottom: 1px solid hsl(30, 18%, 87%);
-  border-collapse: collapse;
 }
 
 section#nutrition td {
